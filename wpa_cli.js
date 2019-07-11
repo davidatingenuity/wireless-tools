@@ -212,7 +212,7 @@ function parse_scan_results(block) {
             parsed.flags = match[1];
         }
 
-        if ((match = entry.match(/\t([^\t]{1,32}(?=\n))/))) {
+        if ((match = entry.match(/\t([^\t]+(?=\n))/))) {
             parsed.ssid = match[1];
         }
 
